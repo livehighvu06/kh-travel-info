@@ -1,0 +1,177 @@
+@import "./reset.scss";
+
+body{
+    background-color: #EEEEEE;
+    text-align:center;
+}
+.select{
+    position: relative;
+    height: 380px;
+    background-image: url(../assets/main-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .select-title{
+        position: relative;
+        top: 89px;
+        font-size: 40px;
+        color: #FFFFFF;
+        letter-spacing: 3.89px;
+    }
+    .select-ad{
+        position: relative;
+        width: 100%;
+        margin-top: 185px;
+        font-size: 18px;
+        background: rgba(255,255,255,0.70);
+        border: 3px solid #FFFFFF;
+        border-radius: 3px;
+        max-width: 452px;
+        width: 70%;
+        height: 48px;
+      }
+}
+
+.hot-ad{
+    position: relative;
+    margin: -28px auto 0px auto;
+    min-height: 112px;
+    max-width: 800px;
+    text-align: left;
+    padding-left: 26px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    .hot-ad-title{
+        padding-top: 20px;
+        font-size: 18px;
+        color: #000000;
+    }
+    .hot-ad-ads{
+        position: relative;
+        .hot-btn{
+            position: relative;
+            height: 42px;
+            width: 130px;
+            float:left;
+            margin: 15px 13px;
+            line-height: 42px;
+            border-radius: 5px;
+            font-size: 20px;
+            color: #FFFFFF;
+          }
+    }
+    
+}
+ 
+//clear
+.hot-ad-ads:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+//down-line
+.down-line{
+    margin: 49px auto 0px auto;
+    max-width: 900px;
+    border: 1px dashed #559AC8;
+}
+.down-icon{
+    width: 24px;
+    height: 12px;
+    color: #559AC8;
+    font-size: 13px;
+    padding: 7px 1px 7px 1px;
+    margin: -16px auto 0px auto;
+    border: 2px solid #559AC8;
+    border-radius: 70px;
+    background-color: #EEEEEE;
+}
+
+// 行政區顯示
+.sub-title{
+    margin: 65px auto 0px auto;
+    font-size: 36px;
+    color: #8A82CC;
+    letter-spacing: 3.89px;
+}
+
+//卡片
+.area-list{
+    max-width: 960px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex-wrap: wrap;
+    .card{
+        width: 50%;
+        justify-content: center;
+        align-items:center;
+    .area-location{
+        margin: 18px 8px;
+        background-color: #fff;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+        position: relative;
+        .area-location-img{
+            height: 155px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            h3,p{
+                margin-top: 117px;
+                display: inline-block;
+                color: #fff;
+            }
+            h3{
+                font-size: 24px;
+                float: left;
+                margin-left: 22px;
+            }
+            p{
+                font-size: 16px;
+                float: right;
+                margin-right: 22px;
+            }
+        }
+        .area-location-info{
+            padding: 20px 23px;
+            text-align:left;
+            ul li{
+                margin-top: 5px;
+            }
+            ul li:first-child img{
+                margin: 0 4px;
+            }
+            ul li:nth-child(2) img{
+                margin: 0 6px;
+            }
+            ul li:nth-child(3) img{
+                margin: 0 8px;
+            }
+        }
+        .area-location-free{
+            position: absolute;
+            bottom: 15px;
+            right: 23px;
+            color: #000;
+            font-size: 16px;
+            img{
+                margin: 0 2px;
+            }
+        }
+      }
+    }
+}
+@media screen and (max-width:699px) {
+    .hot-ad .hot-ad-ads .hot-btn{
+        width: 40%;
+    }
+    .area-list .card{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
