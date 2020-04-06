@@ -3,20 +3,24 @@
 body{
     background-color: #EEEEEE;
     text-align:center;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.parallax-slider{
+    left: 0;
+}
+.section{
+    background-color: #EEEEEE;
 }
 .select{
     position: relative;
-    height: 380px;
-    background-image: url(../assets/main-image.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: 400px;
     .select-title{
         position: relative;
         top: 89px;
         font-size: 40px;
+        font-weight: 700;
         color: #FFFFFF;
-        letter-spacing: 3.89px;
+        letter-spacing: 5px;
     }
     .select-ad{
         position: relative;
@@ -34,12 +38,15 @@ body{
 
 .hot-ad{
     position: relative;
+    display: inline-block;
     margin: -28px auto 0px auto;
     min-height: 112px;
     max-width: 800px;
     text-align: left;
     padding-left: 26px;
     background: #FFFFFF;
+    -webkit-box-shadow:0 1px 3px 0 rgba(0,0,0,0.20);
+    -moz-box-shadow:0 1px 3px 0 rgba(0,0,0,0.20);
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
     border-radius: 5px;
     .hot-ad-title{
@@ -56,6 +63,7 @@ body{
             float:left;
             margin: 15px 13px;
             line-height: 42px;
+            border: none;
             border-radius: 5px;
             font-size: 20px;
             color: #FFFFFF;
@@ -92,6 +100,7 @@ body{
 .sub-title{
     margin: 65px auto 0px auto;
     font-size: 36px;
+    font-weight: 700;
     color: #8A82CC;
     letter-spacing: 3.89px;
 }
@@ -116,33 +125,46 @@ body{
         position: relative;
         .area-location-img{
             height: 155px;
+            position: relative;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            h3,p{
-                margin-top: 117px;
-                display: inline-block;
-                color: #fff;
+            .area-name{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 10px 0;
+                background-color: rgba(0,0,0,0.3);
+                h3,p{
+                    color: #fff;
+                    text-shadow:0px 0px 3px rgba(0,0,0,0.7);
+                }
+                h3{
+                    font-size: 24px;
+                    float: left;
+                    margin-left: 22px;
+                }
+                p{
+                    font-size: 16px;
+                    padding-top: 3px;
+                    float: right;
+                    margin-right: 22px;
+                }
             }
-            h3{
-                font-size: 24px;
-                float: left;
-                margin-left: 22px;
-            }
-            p{
-                font-size: 16px;
-                float: right;
-                margin-right: 22px;
-            }
+            
         }
         .area-location-info{
             padding: 20px 23px;
             text-align:left;
+            font-weight: 100;
             ul li{
                 margin-top: 5px;
+                display: flex;
             }
             ul li:first-child img{
-                margin: 0 4px;
+                height: 100%;
+                margin: 0 5px;
             }
             ul li:nth-child(2) img{
                 margin: 0 6px;
@@ -151,14 +173,16 @@ body{
                 margin: 0 8px;
             }
         }
-        .area-location-free{
+        .area-location-forFree{
             position: absolute;
             bottom: 15px;
             right: 23px;
             color: #000;
             font-size: 16px;
             img{
-                margin: 0 2px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 3px;
             }
         }
       }
