@@ -72,13 +72,42 @@ body {
   height: 400px;
 }
 
-.select .select-title {
+.select .select-title a {
+  display: block;
   position: relative;
+  text-decoration: none;
   top: 89px;
+  width: 280px;
+  height: 50px;
+  margin: 0 auto;
   font-size: 40px;
   font-weight: 700;
   color: #FFFFFF;
   letter-spacing: 5px;
+  text-shadow: 0 0 5px #000;
+  z-index: 2;
+}
+
+.select .select-title a:before,
+.select .select-title a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -2px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.select .select-title a:before {
+  background-color: #ff5252;
+  left: 0;
+}
+
+.select .select-title a:after {
+  background-color: #ffb142;
+  left: 45px;
 }
 
 .select .select-ad {
@@ -92,6 +121,17 @@ body {
   max-width: 452px;
   width: 70%;
   height: 48px;
+}
+
+.select:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
 }
 
 .hot-ad {
@@ -118,6 +158,38 @@ body {
   position: relative;
 }
 
+.hot-ad .hot-ad-ads :nth-child(1).hot-btn {
+  background: #8a82cc;
+}
+
+.hot-ad .hot-ad-ads :nth-child(1).hot-btn:hover {
+  background-color: rgba(138, 130, 204, 0.7);
+}
+
+.hot-ad .hot-ad-ads :nth-child(2).hot-btn {
+  background: #ffa782;
+}
+
+.hot-ad .hot-ad-ads :nth-child(2).hot-btn:hover {
+  background-color: rgba(255, 167, 130, 0.7);
+}
+
+.hot-ad .hot-ad-ads :nth-child(3).hot-btn {
+  background: #f5d105;
+}
+
+.hot-ad .hot-ad-ads :nth-child(3).hot-btn:hover {
+  background-color: rgba(245, 209, 5, 0.7);
+}
+
+.hot-ad .hot-ad-ads :nth-child(4).hot-btn {
+  background: #325f7e;
+}
+
+.hot-ad .hot-ad-ads :nth-child(4).hot-btn:hover {
+  background-color: rgba(43, 81, 107, 0.7);
+}
+
 .hot-ad .hot-ad-ads .hot-btn {
   position: relative;
   height: 42px;
@@ -129,6 +201,7 @@ body {
   border-radius: 5px;
   font-size: 20px;
   color: #FFFFFF;
+  outline: none;
 }
 
 .hot-ad-ads:after {
@@ -182,6 +255,7 @@ body {
 }
 
 .area-list .card {
+  display: none;
   width: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
